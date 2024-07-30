@@ -1,0 +1,41 @@
+.menu{
+    background-color: #2a2138;
+    width: 100%;
+    padding-top: 20px;
+}
+body {
+    font-family:"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 13px 10px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;}
+
+
+.menu ul li a i {
+    margin-right: 10px;
+}
+
+.menu ul li a:hover, .menu ul li a:active {
+    background-color: #221a2e;
+}
+
+
+@media (min-width: 768px) {
+    .menu {
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+    }
+}
+

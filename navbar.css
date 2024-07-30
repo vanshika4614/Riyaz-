@@ -1,0 +1,21 @@
+.navbar{
+    background-color: black;
+    color: white;
+    display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+@media screen and (min-width:768px) {
+    .navbar{
+        display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+    font-size: 1.5rem;
+   
+}
+}

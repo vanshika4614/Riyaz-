@@ -1,0 +1,37 @@
+table{
+    border-collapse: collapse;
+    border: 0px solid #c4dcf3;   
+   }
+   th{
+    background-color: #427fef;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border: 0px solid #c4dcf3;
+    }
+
+    tr{
+    padding: 8px;
+    text-align: left;
+    border: 0px solid #427fef;
+    }
+
+    td{
+        padding: 8px;
+        text-align: center;
+        border: 0px solid #c4dcf3;}
+       
+    tfoot{
+    background-color: #427fef;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border: 0px solid #427fef;
+    }
+   tr:nth-child(odd){
+background-color: #f2f2f2;
+   }
+
+   tr:nth-child(odd){
+    background-color: #eef7ff;
+       }
