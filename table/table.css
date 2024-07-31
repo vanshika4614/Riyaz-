@@ -1,37 +1,33 @@
 table{
-    border-collapse: collapse;
-    border: 0px solid #c4dcf3;   
+     border-collapse: collapse;
    }
    th{
-    background-color: #427fef;
-    color: white;
-    padding: 8px;
-    text-align: left;
-    border: 0px solid #c4dcf3;
+     background-color: #427fef;
+     color: white;
+     padding: 8px;
+     text-align: left;
     }
 
     tr{
-    padding: 8px;
-    text-align: left;
-    border: 0px solid #427fef;
+     padding: 8px;
+     text-align: left;
     }
 
     td{
-        padding: 8px;
-        text-align: center;
-        border: 0px solid #c4dcf3;}
+     padding: 8px;
+     text-align: center;
+    }
        
     tfoot{
-    background-color: #427fef;
-    color: white;
-    padding: 8px;
-    text-align: left;
-    border: 0px solid #427fef;
-    }
-   tr:nth-child(odd){
-background-color: #f2f2f2;
+     background-color: #427fef;
+     color: white;
+     padding: 8px;
+     text-align: left;
+   }
+   tr:nth-child(even){
+     background-color: #f2f2f2ce;
    }
 
-   tr:nth-child(odd){
-    background-color: #eef7ff;
+   tr:nth-child(even){
+     background-color: #eef7ff93;
        }
