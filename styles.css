@@ -12,18 +12,19 @@ body {
     display: flex;
     background-color: #ffffffd4;
     border-radius: 8px;
-    width: 650px;
-    height: 344px;
+    width: 550px;
+    height: 310px;
 }
 
 .image img {
-    width: 300px;
-    height:344px;
+    width: 250px;
+    height:310px;
     border-radius: 8px 0px 0px 8px;
 }
 
 .details {
     padding: 20px;
+    font-size: 14px;
    }
 
 .pname {
@@ -33,35 +34,37 @@ body {
 }
 
 .p-title {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 9px;
+    margin-left:1px ;
     color: #333333;
-     .playfair-display-font;  
       font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: medium 500;
-      font-style: normal;
-      font-size:xx-large;
+      font-size:x-large;
 
     };
 
 
 .content {
-    font-size:smaller;
+  
     color: #555555;
-    
+      
   }
 
 .product-price {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+    padding-top: 0.5px;
+    position: absolute;
+    top: 425px;
+    left: 370px;
+    
 }
 
 .current-price {
-    font-size: 24px;
+    font-size: 29px;
     color: #28a745;
     font-weight: 900;
     font-family: "Playfair Display", serif;
+  
 }
 
 .original-price {
@@ -70,7 +73,7 @@ body {
     text-decoration: line-through;
     margin-left: 10px;
     font-weight: 600;
-  
+    margin-top: 10px;
 }
 
 .button {
@@ -80,8 +83,12 @@ body {
     padding: 10px 20px;
     border-radius: 4px;
     font-size: 16px;
-    width: 300px;
-   word-spacing: 0.2cap;
+    width: 250px;
+    word-spacing: 0.2cap;
+    position: absolute;
+    top: 475px;
+    left: 370px;
+   
 }
 
 a{
