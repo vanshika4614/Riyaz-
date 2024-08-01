@@ -14,9 +14,9 @@ body {
 .card-body {
   display: flex;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 0px;
   width: 270px;
-  height: 404px;
+  height: 400px;
   max-width: 100%;
 }
 .image {
@@ -25,7 +25,8 @@ body {
 
 .image img {
   width: 270px;
-  height: 404px;
+  height: 400px;
+  margin-top: 0.1px;
   border-radius: 8px 0 0 8px;
   object-fit: cover;
 }
@@ -99,7 +100,7 @@ body {
     height: 700px;
     width: 100%;
     display: flex;
-
+    
     flex-direction: column;
     margin: 0;
     background-color: hsl(30, 38%, 92%);
@@ -124,6 +125,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    border-radius: 0px 0px 8px 8px;
     margin: 0 auto;
     width: 90%;
     height: 380px;
@@ -175,7 +177,7 @@ body {
     width: 100%;
     object-fit: cover;
     height: 350px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     background-repeat: no-repeat;
   }
 
