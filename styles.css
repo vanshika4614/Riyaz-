@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Playfair+Display:wght@500&display=swap');
 
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: #d8d0c0;
@@ -28,6 +27,7 @@ body {
 .details {
     padding: 20px;
     font-size: 14px;
+    
    }
 
 .pname {
@@ -47,26 +47,25 @@ body {
 
 
 .content {
-  
+ 
     color: #555555;
       
   }
 
 .product-price {
     display: flex;
-    margin-bottom: 19px;
-    padding-top: 0.5px;
-    position: absolute;
-    top: 425px;
-    left: 400px;
-    
 }
 
 .current-price {
+ 
+   
     font-size: 29px;
     color: #28a745;
+
+
     font-weight: 900;
     font-family: "Playfair Display", serif;
+ 
   
 }
 
@@ -76,7 +75,7 @@ body {
     text-decoration: line-through;
     margin-left: 25px;
     font-weight: 600;
-    margin-top: 15px;
+   
 }
 
 .button {
@@ -88,10 +87,6 @@ body {
     font-size: 16px;
     width: 244px;
     word-spacing: 0.2cap;
-    position: absolute;
-    top: 475px;
-    left: 385px;
-   
 }
 
 a{
