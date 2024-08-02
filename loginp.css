@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    position: relative;
+     width: 700px;
+     margin-top: 80px;
+     margin-bottom: 100px;
+     margin-left: 30px;
+     margin-right: 30px;
+   height: 500px;
+  background: #2f2f3b ;
+  border-radius: 12px;
+}
+
+body{
+    background: #7a7bae;
+}
+
+.login-img{
+    background-image: url(https://images.unsplash.com/photo-1495287924875-c158d2e8aafc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    border-radius: 12px;
+    height: 480px;
+    margin-top: 10px;
+    width: 350px;
+    margin-left: 10px;
+}
+
+.form-data{
+    
+    display: flex;
+}
+.form{
+    
+    margin-top: 110px;
+}
+
+.heading{
+    
+    margin-top: 10px;
+    margin-left: 350px;
+    text-align: justify;
+    color: white;
+}
+
+.login{
+    /* margin-left: 350px; */
+ 
+  color: white;
+    margin-top: 70px;
+    
+}
+.data p{display: flex;
+align-items: center;
+margin-top: 10px;
+}
+
+
+#fname input{
+    height: 30px; 
+    width: 140px; 
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+
+#email{
+    width: 200px;
+    border-radius: 5px;}
+#password{
+    width: 200px;
+    border-radius: 5px;
+} 
