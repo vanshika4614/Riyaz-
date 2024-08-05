@@ -1,28 +1,67 @@
 <html>
-<head><title>Login page</title>
-<link rel="stylesheet" href="loginp.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="loginp.css" />
+    <script src="https://kit.fontawesome.com/3c75bd7f8c.js"></script>
+  </head>
+  <body>
     <div class="container">
-    <div class ="login-img">
-    <div class="form-data">
-        <div class="heading"><b>Create an account</b></div>
-        <div class="login"> Already have an account? <a href="#">Log in</a></div>
-        <form class="form">
-            <span class="data">   
-                <p id="fname"> <input type="text" placeholder="Fletcher" id="name" autofocus> 
-                <input type="text" placeholder="Last name" id="name"></p>
-                 <p id="email"> <input type="email" placeholder="Email" id="email"> </p>
-                 <p id="password"> <input type="password" placeholder=" Enter your password" id="password"> </p>
-                <input type="checkbox" id="t&c" name="terms and conditions"> 
-                 <label for="t&c">I agree to the <a href="#">Terms&Conditions</a></label>
-                 <button type="submit">Create account</button>
-            </span>
+      <div class="login-img">
+        <div class="backtoweb">
+          <button type="button">
+            Back to website <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
-   </form>
+        <p class="logo">AMU</p>
+        <p class="img-text">Capturing Moments,<br />Creating Memories</p>
+        <div class="dashes">
+          <i class="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-minus"></i>
+        </div>
+      </div>
+      <div class="login-details">
+        <div class="form-container">
+          <p class="title"><b>Create an account</b></p>
+          <p class="login-link">
+            Already have an account? <a href="#">Log in</a>
+          </p>
+          <form class="form">
+            <div class="form-group">
+              <input type="text" placeholder="Fletcher" id="fname" autofocus />
+              <!-- <div class="form-group"></div> -->
+              <input type="text" placeholder="Last name" id="lname" />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                id="password"
+              />
+            </div>
+            <div class="terms">
+              <input type="checkbox" id="t&c" name="terms and conditions" />
+              <label for="t&c"
+                >I agree to the <a href="#">Terms & Conditions</a></label
+              >
+            </div>
+            <button type="submit" class="create-account">Create account</button>
+            <div class="social-login">
+              <button type="button" class="google-login">
+                <i class="fa-brands fa-google"></i> Google
+              </button>
+              <button type="button" class="apple-login">
+                <i class="fa-brands fa-apple"></i> Apple
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
