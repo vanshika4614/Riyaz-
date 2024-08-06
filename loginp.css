@@ -239,7 +239,7 @@ body {
   border: solid #ccc 1px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 421px) {
   .container {
     flex-direction: column;
     width: 100%;
