@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Playfair+Display:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap");
 
 body {
   background: #7a7bae;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,14 +60,16 @@ body {
   text-align: center;
   font-size: 28px;
   margin-top: 80%;
+  margin-bottom: 0;
 }
 
 .dashes {
   text-align: center;
+  padding-top: 0;
 }
 
 .dashes i {
-  width: 60px;
+  width: 40px;
 }
 
 .logo-button {
@@ -98,6 +100,7 @@ body {
 .title {
   font-size: 35px;
   color: white;
+  font-weight: normal; /* Make the title normal weight */
 }
 
 .login-link {
@@ -128,16 +131,16 @@ body {
   background: #444;
   color: white;
 }
+
 #or-register {
   display: flex;
   align-items: center;
   text-align: center;
   color: white;
-  font-size: medium;
+  font-size: small;
   margin-bottom: 25px;
   margin-left: 12px;
-  font-size: small;
-  width: 100%;
+  width: 99%;
   padding-top: 15px;
 }
 
@@ -156,15 +159,6 @@ body {
   margin-left: 0.25em;
 }
 
-/* #or-register {
-  color: white;
-  font-size: medium;
-  margin-bottom: 25px;
-  margin-left: 20px;
-  font-size: small;
-  text-align: center;
-} */
-
 .form-group input {
   width: 100%;
   padding: 10px;
@@ -174,6 +168,7 @@ body {
   background: #444;
   color: white;
 }
+
 .eye {
   position: relative;
   opacity: 0.7;
@@ -216,7 +211,6 @@ body {
 .social-login {
   display: flex;
   justify-content: space-around;
-
   margin-top: 16px;
   margin-bottom: 40px;
   width: 100%;
@@ -305,10 +299,8 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-    font-size: medium;
-    margin-bottom: 25px;
-    margin-left: 12px;
     font-size: small;
+    margin-bottom: 25px;
     width: 100%;
     padding-top: 15px;
   }
@@ -316,7 +308,7 @@ body {
   #or-register::before,
   #or-register::after {
     content: "";
-    flex: 0.46;
+    flex: 0 1 25%;
     border-bottom: 1px solid #ccc;
   }
 
@@ -328,81 +320,6 @@ body {
     margin-left: 0.25em;
   }
 
-  .social-login button {
-    display: flex;
-    justify-content: center;
-    width: 44%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #333;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 625px) {
-  .container {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-
-  .login-img {
-    display: none;
-  }
-
-  .login-details {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 26px;
-    padding-bottom: 2px;
-  }
-
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    background: #444;
-    color: white;
-  }
-
-  #fname,
-  #lname {
-    padding: 10px;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    border: none;
-    border-radius: 5px;
-    background: #444;
-    color: white;
-  }
-
-  .create-account {
-    width: 95%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: rgb(128, 91, 147);
-    color: white;
-    font-size: 16px;
-    margin-left: 11px;
-    cursor: pointer;
-  }
-
-  #or-register {
-    color: white;
-
-    margin-bottom: 25px;
-    margin-left: 20px;
-  }
   .social-login button {
     display: flex;
     justify-content: center;
