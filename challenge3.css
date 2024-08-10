@@ -194,11 +194,11 @@ main {
 }
 
 .product-thumbnails {
-  display: none;
-  /* gap: 2%;
-  margin-top: 1.8rem; */
+  display: flex;
+  gap: 2%;
+  margin-top: 1.8rem;
 }
-/* 
+
 .product-thumbnails a {
   display: inline-block;
   width: 8%;
@@ -219,7 +219,7 @@ main {
 .product-thumbnails img:hover {
   border: 0.2em solid #f2803a;
   opacity: 0.6;
-} */
+}
 
 .lightbox {
   position: fixed;
@@ -384,10 +384,6 @@ margin:0; */
     color: #333;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  .product-thumbnails img {
-    display: none;
   }
 
   .product-details {
