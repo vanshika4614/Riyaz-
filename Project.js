@@ -5,7 +5,6 @@ const sound = document.getElementById("sound");
 const btn = document.getElementById("search-btn");
 const themeToggle = document.getElementById('theme-toggle');
 
-// Theme Toggle Event Listener
 themeToggle.addEventListener('change', () => {
   document.body.classList.toggle('dark-mode', themeToggle.checked);
   document.querySelector('.container').classList.toggle('dark-mode', themeToggle.checked);
@@ -60,7 +59,7 @@ btn.addEventListener("click", () => {
               <strong>Example:</strong> ${example}
             </p>
           `;
-          // Autoplay sound
+          // feature of Autoplay sound
           if (audioUrl) {
             playSound(audioUrl);
           }
