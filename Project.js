@@ -59,7 +59,6 @@ btn.addEventListener("click", () => {
               <strong>Example:</strong> ${example}
             </p>
           `;
-          // feature of Autoplay sound
           if (audioUrl) {
             playSound(audioUrl);
           }
@@ -79,3 +78,9 @@ function playSound(audioUrl) {
   sound.setAttribute("src", audioUrl);
   sound.play();
 }
+
+if (audioUrl) {
+  const audio = new Audio(audioUrl);
+  audio.play();
+}
+
