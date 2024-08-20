@@ -1,0 +1,195 @@
+/* Common Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #87CEFA; /* Light blue color */
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  background-color: #fff;
+  width: 90vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #4682B4; /* Steel blue */
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 15px 0;
+  width: 25%;
+  background-color: #4682B4; /* Steel blue */
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.result {
+  position: relative;
+}
+
+.result h3 {
+  font-size: 30px;
+  color: #1E90FF; /* Dodger blue */
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.result button {
+  background-color: transparent;
+  color: #4682B4; /* Steel blue */
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.result .details {
+  display: flex;
+  gap: 10px;
+  color: #00BFFF; /* Deep sky blue */
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+
+.words-meaning {
+  color: #4682B4; /* Steel blue */
+}
+
+.word-example {
+  color: #4682B4; /* Steel blue */
+  font-style: italic;
+  border-left: 5px solid #1E90FF; /* Dodger blue */
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #2c3e50; /* Darker blue */
+  color: #ecf0f1; /* Light color for text */
+}
+
+.container.dark-mode {
+  background-color: #34495e; /* Darker grey-blue */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.search-box input.dark-mode {
+  border-bottom: 3px solid #1abc9c; /* Turquoise */
+}
+
+.search-box button.dark-mode {
+  background-color: #1abc9c; /* Turquoise */
+  color: #ecf0f1; /* Light color for text */
+}
+
+.result h3.dark-mode {
+  color: #3498db; /* Light blue */
+}
+
+.result button.dark-mode {
+  color: #ecf0f1; /* Light color for text */
+}
+
+.result .details.dark-mode {
+  color: #7f8c8d; /* Light grey */
+}
+
+.words-meaning.dark-mode, .word-example.dark-mode {
+  color: #ecf0f1; /* Light color for text */
+}
+
+.word-example.dark-mode {
+  border-left: 5px solid #3498db; /* Light blue */
+}
+
+/* Theme Switcher */
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.theme-switcher i {
+  font-size: 20px;
+  color: #333;
+  margin: 0 5px;
+}
+
+.theme-switcher input {
+  display: none;
+}
+
+.slider {
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3; /* Blue */
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+input:checked ~ .fa-sun {
+  color: #f7f7f7;
+}
+
+input:checked ~ .fa-moon {
+  color: #666;
+}
