@@ -21,15 +21,20 @@
     </header>
     <audio id="sound"></audio>
     <div class="container">
+      <div class="logo">
+        <h2>MY WORDBOOK <i class="fa-solid fa-book-open"></i></h2>
+      </div>
       <div class="search-box">
-        <input type="text" placeholder="word please..." id="inp-word" />
-        <button class="search-btn" id="search-btn">Search</button>
+        <input type="text" placeholder="  word please..." id="inp-word" />
+        <button class="search-btn" id="search-btn">
+          <h2>Search</h2>
+        </button>
       </div>
       <div class="result" id="result">
         <div class="word">
           <h3>Sample</h3>
           <button
-            onclick="playSound('https://api.dictionaryapi.dev/media/pronunciations/en/sample-us.mp3')"
+            onclick="playSound('https://api.dictionaryapi.dev/api/v2/entries/en/sample')"
           >
             <i class="fa-solid fa-volume-high"></i>
           </button>
@@ -44,6 +49,7 @@
         <p class="word-example">
           <strong>Example:</strong> "He gave me a sample of the product."
         </p>
+        <p class="word-synonyms" id="word-synonyms">Prototype</p>
       </div>
     </div>
 
