@@ -26,7 +26,7 @@ btn.addEventListener("click", () => {
       .then((response) => response.json())
       .then((data) => {
         if (data.title && data.message) {
-          result.innerHTML = `<h3 class="error">Word not found.</h3>`;
+          result.innerHTML = `<h4 class="error">Word not found.</h4>`;
         } else {
           const wordData = data[0];
           const wordMeaning = wordData.meanings[0];
@@ -60,7 +60,7 @@ btn.addEventListener("click", () => {
         }
       })
       .catch(() => {
-        result.innerHTML = `<h3 class="error">Error fetching data.</h3>`;
+        result.innerHTML = `<h4 class="error">Error fetching data.</h4>`;
       });
   }
 });

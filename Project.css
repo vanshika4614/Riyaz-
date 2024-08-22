@@ -121,7 +121,8 @@ body {
 
 .error {
   color: red;
-  font-size: 18px;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 body.dark-mode {
@@ -165,8 +166,8 @@ body.dark-mode {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 80px;
+  right: 330px;
 }
 
 .theme-switcher i {
