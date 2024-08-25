@@ -166,8 +166,8 @@ body.dark-mode {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 80px;
-  right: 330px;
+  top: 40px;
+  right: 100px;
 }
 
 .theme-switcher i {
@@ -217,4 +217,54 @@ input:checked ~ .fa-sun {
 
 input:checked ~ .fa-moon {
   color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .theme-switcher {
+    top: 20px;
+    right: 50px;
+  }
+
+  .theme-switcher i {
+    font-size: 20px;
+  }
+
+  .slider {
+    width: 40px;
+    height: 20px;
+  }
+
+  .slider::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .theme-switcher {
+    top: 10px;
+    right: 20px;
+  }
+
+  .theme-switcher i {
+    font-size: 18px;
+  }
+
+  .slider {
+    width: 35px;
+    height: 18px;
+  }
+
+  .slider::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(17px);
+  }
 }
